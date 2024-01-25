@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Phones_products</title>
+    <link rel="stylesheet" href="CSS/products.css">
+    
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        function filterProducts() {
+            var input, filter, products, category, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            products = document.getElementsByClassName("product-category");
+
+            for (i = 0; i < products.length; i++) {
+                category = products[i];
+                txtValue = category.textContent || category.innerText;
+
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    category.style.display = "";
+                } else {
+                    category.style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <img id="logo" src="4phones%20logo.JPG" alt="4Phones Logo">
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-items">
+            <button onclick="navigateTo('home.html')">Home</button>
+            <button onclick="navigateTo('products.html')">Products</button>
+            <button onclick="navigateTo('service_booking.html')">Service Booking</button>
+            <button onclick="navigateTo('register.html')">Register</button>
+            <button onclick="navigateTo('contact_us.html')">Contact Us</button>
+            <button onclick="navigateTo('about_us.html')">About</button>
+        </div>
+        <div class="search-area">
+            <label for="searchInput">Search Term*</label>
+            <input type="text" id="searchInput" class="search-box" placeholder="Enter search term" onkeyup="filterProducts()">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main">
+            <h1>Welcome to 4Phones</h1>
+            <p>4Phones is your smartphone expert.</p>
+            <h2>Product Categories</h2>
+            
+            <div class="product-category" id="apple">
+                <a href="products.html#apple">
+                    <img src="Img/IPhone_15.jpg" alt="Apple iPhone 15">
+                    <h3>Apple iPhone 15</h3>
+                </a>
+                    <p>The innovative new design features back glass that has colour infused throughout the material. A custom-designed dual ion-exchange process for the glass, and an aerospace-grade aluminium enclosure, help make iPhone 15 incredibly durable.</p>
+                <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="samsung">
+                <a href="products.html#samsung">
+                    <img src="Img/galaxy_ultra_24.gif" alt="Samsung Galaxy Ultra 2024">
+                    <h3>Samsung Galaxy Ultra 2024</h3>
+                </a>
+                    <p>Industry-leading hardware meets AI Made with titanium. 200MP high-resolution photography & hyper-realistic gameplay</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="google">
+                <a href="products.html#google">
+                    <img src="Img/pixel-5-google.gif" alt="Google Pixel 9">
+                    <h3>Google Pixel 9</h3>
+                </a>
+                    <p>It’s custom-designed with Google AI for cutting-edge photo and also video features and smarter ways to help throughout the day.2 And it makes Pixel 8 Pro super fast and efficient.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="android">
+                <a href="products.html#android">
+                    <img src="Img/One_plus_open.gif" alt="Android Phones">
+                    <h3>Android Phones</h3>
+                </a>
+                    <p>Titanium alloy, carbon fiber, and more. Built to the hilt with aerospace materials – with no expense spared.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="android2">
+                <a href="products.html#android">
+                    <img src="Img/nokia_g11.jpeg" alt="Android Phones">
+                    <h3>Android Phones</h3>
+                </a>
+                    <p>Power up and power through. Nokia G11 pairs 3 days of battery life¹ with smooth performance, so you can keep going and going, enjoying all-day entertainment on a bigger, brighter screen. The triple-lens camera will let you take breathtaking shots, day or night. Plus, with 2× more security updates than the competition², 2 years of OS updates, and fingerprint and face unlock technology, you can rest assured your device is secure, inside and out.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="5g">
+                <a href="products.html#5g">
+                    <img src="Img/5G_phone.jpeg" alt="5G Phones">
+                    <h3>5G Phones</h3>
+                </a>
+                    <p>With a premium glass finish, clean camera layout and energising colourways, Galaxy A54 5G wears the Awesome identity on a seamless and the most graceful frame.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="5g2">
+                <a href="products.html#5g">
+                    <img src="Img/5G_phone2.jpeg" alt="5G Phones">
+                    <h3>5G Phones</h3>
+                </a>
+                    <p>Unlock your phone instantly by touching the on-screen fingerprint reader beneath the display.
+Power up in just 10 minutes with 68W TurboPowerTM charging3 – or free yourself from cords with 15W wireless charging.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="accessories">
+                <a href="products.html#accessories">
+                    <img src="Img/accessories.gif" alt="Phone Accessories">
+                    <h3>Android Accessories</h3>
+                </a>
+                    <p>From Cases to Headphones, we have you covered</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="accessories2">
+                <a href="products.html#accessories">
+                    <img src="Img/IPhone_wallet.jpeg" alt="Phone Accessories">
+                    <h3>IPhone Accessories</h3>
+                </a>
+                    <p>From Cases to Airpods</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+        </div>
+        <div class="aside">
+            <h2>Purchases</h2>
+            <div>
+                <p>0 items</p>
+                <p>Cart sub-total: $0</p>
+            </div>
+            <button onclick="navigateTo('checkout.html')">Go to Checkout</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&#169; 2024 Nicholas Booth</p>
+    </div>
+
+</body>
+</html>

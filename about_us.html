@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Phones_single</title>
+    <link rel="stylesheet" href="CSS/about_us.css">
+    <script>
+    function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <img id="logo" src="4phones%20logo.JPG" alt="4Phones Logo">
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-items">
+            <button onclick="navigateTo('home.html')">Home</button>
+            <button onclick="navigateTo('products.html')">Products</button>
+            <button onclick="navigateTo('service_booking.html')">Service Booking</button>
+            <button onclick="navigateTo('register.html')">Register</button>
+            <button onclick="navigateTo('contact_us.html')">Contact Us</button>
+            <button onclick="navigateTo('about_us.html')">About</button>
+        </div>
+        <div class="search-area">
+            <input type="text" class="search-box" placeholder="Enter search term">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main">
+            <div class="about-section">
+                <h1>About 4Phones</h1>
+                <p>4Phones has been in business for over ten years, providing first-class service to its customers. Based in the Sydney CBD, 4Phones provides top-class smartphones at bargain prices throughout Australia and offers repair services for damaged phones.</p>
+            </div>
+
+            <div class="goals-section">
+                <h2>Our goals are:</h2>
+                <ul>
+                    <li>To become Australia's most well-known and respected smartphone reseller</li>
+                    <li>To create a service-based organization whose goal is to exceed customer's expectations</li>
+                    <li>To provide a smooth, efficient, and transparent sales process</li>
+                </ul>
+            </div>
+
+            <div class="contact-section">
+                <h2>Contact Information:</h2>
+                <ul>
+                    <li>Address: 100 Main Road, Sydney, NSW 2000</li>
+                    <li>Email: info@4phones.com.au</li>
+                    <li>Phone: 02 4444 5555</li>
+                </ul>
+            </div>
+        </div>
+        <div class="aside">
+            <h2>Purchases</h2>
+            <div>
+                <p>0 items</p>
+                <p>Cart sub-total: $0</p>
+            </div>
+            <button onclick="navigateTo('checkout.html')">Go to Checkout</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&#169; 2024 Nicholas Booth</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+ <style>
+        /* CSS Reset (Optional, for consistent browser styling) */
+        body, h1, h2, h3, p, ul, ol, li, figure {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #logo {
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .menu-container {
+            background-color: #eee;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%; /* Set the width to 100% */
+            box-sizing: border-box;
+        }
+
+        .menu-items {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu button {
+            text-decoration: none;
+            color: #333;
+            margin-right: 10px; /* Adjusted margin */
+            box-sizing: border-box;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        .search-area {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .search-box {
+            margin-right: 10px;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap; /* Add this line */
+        }
+
+        .main {
+            width: 80%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto; /* Center the section */
+            max-width: 800px;
+        }
+
+       .product-category {
+    width: calc(33.33% - 20px);
+    text-align: center;
+    margin: 20px 0;
+    box-sizing: border-box;
+    padding: 20px; /* Adjust the padding to increase the height of the container */
+    position: relative;
+}
+
+.product-category p {
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust the margin to add space between image and text */
+}
+
+
+        .product-category h2 {
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .product-category img {
+            max-width: 150%;
+            height: auto;
+            margin-top: 10px;
+            display: block; /* Center the image horizontally */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Learn More Button Styles */
+        .learn-more-button {
+            background-color: #ADD8E6; /* Light blue background */
+            color: #fff; /* White text */
+            border: 1px solid #000; /* Black border */
+            padding: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        /* Add hover effect */
+        .learn-more-button:hover {
+            background-color: #87CEEB; /* Light blue on hover */
+        }
+
+        .aside {
+            width: 20%;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .menu-container, .main-container, .main, .aside {
+                width: 100%;
+            }
+
+            .product-category p {
+            text-decoration: none;
+            display: inline; /* Ensure the <p> is treated as inline */
+            font-size: 16px; /* Adjust the font size */
+        }
+            }
+        }
+    </style>

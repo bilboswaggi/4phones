@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Phones_service_booking</title>
+     <link rel="stylesheet" href="CSS/service_booking.css">
+    
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <img id="logo" src="4phones%20logo.JPG" alt="4Phones Logo">
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-items">
+            <button onclick="navigateTo('home.html')">Home</button>
+            <button onclick="navigateTo('products.html')">Products</button>
+            <button onclick="navigateTo('service_booking.html')">Service Booking</button>
+            <button onclick="navigateTo('register.html')">Register</button>
+            <button onclick="navigateTo('contact_us.html')">Contact Us</button>
+            <button onclick="navigateTo('about_us.html')">About</button>
+        </div>
+        <div class="search-area">
+            <input type="text" class="search-box" placeholder="Enter search term">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main">
+            <h1>Service Booking Form</h1>
+            <p>Please complete the following form to book your damaged smartphone in for repair.</p>
+            
+            <form action="#" method="post">
+                <label for="fullName">Full Name*</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="phone">Phone*</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="dateTime">Date and Time*</label>
+                <input type="datetime-local" id="dateTime" name="dateTime" required>
+
+                <label for="repairDetails">Repair Details*</label>
+                <textarea id="repairDetails" name="repairDetails" rows="4" required></textarea>
+
+                <button class="clear" type="reset">Clear</button>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+         <div class="main">
+             <img src="Img/working_on_phone.gif" alt="man working on phone">
+            </div>
+        <div class="aside">
+            <h2>Purchases</h2>
+            <div>
+                <p>0 items</p>
+                <p>Cart sub-total: $0</p>
+            </div>
+            <button onclick="navigateTo('checkout.html')">Go to Checkout</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&#169; 2024 Nicholas Booth</p>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,133 @@
+        /* CSS Reset (Optional, for consistent browser styling) */
+        body, h1, h2, h3, p, ul, ol, li, figure {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #logo {
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .menu-container {
+            background-color: #eee;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%; /* Set the width to 100% */
+            box-sizing: border-box;
+        }
+
+        .menu-items {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu button {
+            text-decoration: none;
+            color: #333;
+            margin-right: 10px; /* Adjusted margin */
+            box-sizing: border-box;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        .search-area {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .search-box {
+            margin-right: 10px;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .main {
+            width: 80%;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%; /* Set width to 100% to avoid intruding into the product images */
+            box-sizing: border-box;
+            margin-bottom: 20px; /* Add margin to separate from product images */
+        }
+
+        .main-content h1,
+        .main-content p,
+        .main-content h2 {
+            margin-bottom: 20px;
+        }
+
+        .product-category {
+            width: calc(33.33% - 20px); /* Adjust the width based on your preference */
+            text-align: center;
+            margin: 20px 0;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .product-category h2 {
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .product-category img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            display: block; /* Center the image horizontally */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .aside {
+            width: 20%;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .menu-container, .main-container, .main, .aside {
+                width: 100%;
+            }
+        }
+   
+    

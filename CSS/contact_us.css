@@ -1,0 +1,119 @@
+ <style>
+        /* CSS Reset (Optional, for consistent browser styling) */
+        body, h1, h2, h3, p, ul, ol, li, figure {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #logo {
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .menu-container {
+            background-color: #eee;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%; /* Set the width to 100% */
+            box-sizing: border-box;
+        }
+
+        .menu-items {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu button {
+            text-decoration: none;
+            color: #333;
+            margin-right: 10px; /* Adjusted margin */
+            box-sizing: border-box;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        .search-area {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box {
+            margin-right: 10px;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .main {
+            width: 80%;
+            text-align: center;
+        }
+
+        .aside {
+            width: 20%;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        label {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input, textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form container-section {
+            background-color: #41BAFE;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .clear-button {
+            background-color: lightcoral;
+        }
+
+        .submit-button {
+            background-color: red;
+        }
+
+        @media (max-width: 768px) {
+            .menu-container, .main-container, .main, .aside, .form-container {
+                width: 100%;
+            }
+        }
+    </style>

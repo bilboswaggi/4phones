@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Phones_Home</title>
+    <link rel="stylesheet" href="CSS/home.css">
+       <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <img id="logo" src="4phones%20logo.JPG" alt="4Phones Logo">
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-items">
+            <button onclick="navigateTo('home.html')">Home</button>
+            <button onclick="navigateTo('products.html')">Products</button>
+            <button onclick="navigateTo('service_booking.html')">Service Booking</button>
+            <button onclick="navigateTo('register.html')">Register</button>
+            <button onclick="navigateTo('contact_us.html')">Contact Us</button>
+            <button onclick="navigateTo('about_us.html')">About</button>
+        </div>
+        <div class="search-area">
+            <label for="search" class="visually-hidden">Search</label>
+<input type="text" id="search" class="search-box" placeholder="Enter search term" aria-label="Search">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main">
+            <div class="main-content">
+                <h1>Welcome to 4Phones</h1>
+                <p>4Phones is your smartphone expert.</p>
+                <h2>Product Categories</h2>
+            </div>
+            
+            <div class="product-category">
+                <a href="products.html#apple">
+                    <img src="Img/IPhone_15.jpg" alt="Apple iPhone 15">
+                    <h2>Apple Products</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#samsung">
+                    <img src="Img/galaxy_ultra_24.gif" alt="Samsung Galaxy Ultra 2024">
+                    <h2>Samsung Products</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#google">
+                    <img src="Img/pixel-5-google.gif" alt="Google Pixel 9">
+                    <h2>Google Products</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#android">
+                    <img src="Img/One_plus_open.gif" alt="Android Phones">
+                    <h2>Android Products</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#android">
+                    <img src="Img/nokia_g11.jpeg" alt="Android Phones">
+                    <h2>Nokia Products</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#5g">
+                    <img src="Img/5G_phone.jpeg" alt="5G Phones">
+                    <h2>5G Products</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#5g">
+                    <img src="Img/5G_phone2.jpeg" alt="5G Phones">
+                    <h2>5G Phones</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#accessories">
+                    <img src="Img/accessories.gif" alt="Phone Accessories">
+                    <h2>Android Accessories</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#accessories">
+                    <img src="Img/IPhone_wallet.jpeg" alt="Phone Accessories">
+                    <h2>IPhone Accessories</h2>
+                </a>
+            </div>
+        </div>
+        <div class="aside">
+            <h2>Purchases</h2>
+            <div>
+                <p>0 items</p>
+                <p>Cart sub-total: $0</p>
+            </div>
+            <button onclick="navigateTo('checkout.html')">Go to Checkout</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&#169; 2024 Nicholas Booth</p>
+    </div>
+
+</body>
+</html>
